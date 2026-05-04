@@ -30,7 +30,7 @@ export default function Home() {
           <form onSubmit={handleSearch} className="flex gap-2 max-w-xl mx-auto">
             <input
               name="city"
-              placeholder="Enter city, neighbourhood, or zip…"
+              placeholder="Enter city, neighborhood, or zip…"
               className="flex-1 px-4 py-3 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-white"
             />
             <button type="submit" className="bg-white text-primary-700 font-semibold px-6 py-3 rounded-lg hover:bg-primary-50 transition">
