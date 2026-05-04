@@ -41,7 +41,7 @@ export default function Listings() {
     }
   }, [filters, page]);
 
-  useEffect(() => { fetchListings(); }, []); // eslint-disable-line react-hooks/exhaustive-deps
+  useEffect(() => { fetchListings(); }, [fetchListings]);
 
   function handleSearch() {
     setPage(1);

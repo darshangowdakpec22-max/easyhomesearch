@@ -38,7 +38,7 @@ export default function ListingsScreen() {
       const params = { page: p, limit: LIMIT };
       if (c.trim()) params.city = c.trim();
       const { data } = await api.get('/listings', { params });
-      setListings(p === 1 ? data.data : (prev) => [...prev, ...data.data]);
+      setListings((prev) => p === 1 ? data.data : [...prev, ...data.data]);
       setTotal(data.total || 0);
       setPage(p);
     } catch (err) {
