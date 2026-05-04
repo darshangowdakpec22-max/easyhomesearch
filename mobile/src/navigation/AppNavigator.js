@@ -5,6 +5,7 @@ import HomeScreen from '../screens/HomeScreen';
 import ListingsScreen from '../screens/ListingsScreen';
 import ListingDetailScreen from '../screens/ListingDetailScreen';
 import LoginScreen from '../screens/LoginScreen';
+import RegisterScreen from '../screens/RegisterScreen';
 import ProfileScreen from '../screens/ProfileScreen';
 
 const Stack = createNativeStackNavigator();
@@ -33,7 +34,7 @@ function TabNavigator() {
       />
       <Tab.Screen
         name="Profile"
-        component={LoginScreen}
+        component={ProfileScreen}
         options={{ tabBarIcon: () => <Text>👤</Text> }}
       />
     </Tab.Navigator>
@@ -56,7 +57,7 @@ export default function AppNavigator() {
       />
       <Stack.Screen
         name="Register"
-        component={ProfileScreen}
+        component={RegisterScreen}
         options={{ headerShown: true, title: 'Register', headerStyle: { backgroundColor: '#2563eb' }, headerTintColor: '#fff' }}
       />
     </Stack.Navigator>
